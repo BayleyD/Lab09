@@ -1,0 +1,32 @@
+<html>
+    <title> Bayley's Store </title>
+    <h1> Bayley's Store </h1>
+    <body>
+        <img src = "art.jpg" id = "art" class = "floatRight">
+        <img src = "armor.jpg" id = "art" class = "floatRight">
+        <img src = "sword.jpg" id = "art" class = "floatRight">
+        <form action = "customerBackend.php" method = "post" id = "form1" >
+            <h2>User information</h2>
+            <p> Username </p> <input type = "text" name = "username" id = "username">
+            <p> Password </p> <input type = "text" name = "password" id = "password">
+            <h2> Items </h2>
+            <h3> Art ( $50 ) </h3>
+            Quantity <input type = "number" name = "artQ" id = "artQ">
+            <h3> Armor ( $500 ) </h3>
+            Quantity <input type = "number" name = "armorQ" id = "armorQ">
+            <h3> Sword ( $100 ) </h3>
+            Quantity <input type = "number" name = "swordQ" id = "swordQ">
+            <h2>Shipping</h2>
+            <input type = "radio" id = "free" name = "shipping" value = "Free Shipping">
+            <label for = "free"> Free : 7 day shipping </label> <br>
+            <input type = "radio" id = "3day" name = "shipping" value = "3 Day Shipping">
+            <label for = "3day"> $5.00 : 3 day shipping </label> <br>
+            <input type = "radio" id = "overnight" name = "shipping" value = "Overnight Shipping">
+            <label for = "overnight"> $50.00 : Over night shipping </label> <br> <br>
+            <input type="button" value="Submit" onclick="if( sub()) document.getElementById('form1').submit()">&nbsp;&nbsp;
+            <input type = "button" value = "Reset" id = "resetBtn">
+        </form>
+    </body>
+    <script type = "text/javascript" src = "formChecker.js"></script>
+    <link href = "style.css" rel = "stylesheet" type = "text/css">
+</html>
